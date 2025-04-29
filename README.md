@@ -49,6 +49,11 @@ Create a virtual network by first searching "Virtual network" in the search bar 
 
 </p>
 <p>
-Just as we created the resource group and virtual network, create both virtual machines and set DC-1's private IP address to "static", ensuring that it doesn't change.
+Just as we created the resource group and virtual network, create both virtual machines. One VM named DC-1, which runs on Windows Server 2022, and the other named Client-1, which runs on Windows 10. Change DC-1's private IP address from dynamic to "static", ensuring that it doesn't change.
 </p>
 <br />
+
+![image](https://github.com/user-attachments/assets/a636fb0c-4820-4549-864f-224a3a019e70)
+
+
+Next, we sign into DC-1 Virtual machine and disable the "Windows Firewall". We perform this by right-clicking the Windows icon, selecting “run”, and typing wf.msc. In the Windows Defender Firewall window, we ensure the firewall is turned off for all profiles. Select "apply" and then select "OK".
