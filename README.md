@@ -36,11 +36,12 @@ The first step in this process is to create a "Resource Group". Resource groups 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/31914ebc-eb75-4eff-b851-756e1cdea2d8)
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a virtual network by first searching "Virtual network" in the search bar (if not shown on screen) and select "+create". Enter the name of the resource group that you created in the "resource group" text box to be sure they are connected. Name the virtual network "Active-Directory-Vnet". Proceed and select "create" on the bottom of the screen. "Active-Directory-Vnet" should show on virtual networks page.
 </p>
 <br />
 
