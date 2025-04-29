@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The first step in this process is to create a "Resource Group". Resource groups can be found by searching "resource groups" in the search bar. Once entering resource groups, select "+create". Label the resource group name to "Active-Directory" and select "review and create". After reviewing your resource group, select "Create".
 </p>
 <br />
 
