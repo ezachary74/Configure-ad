@@ -88,6 +88,6 @@ Then, navigate to server manager and click on the flag in the top right corner. 
 ![image](https://github.com/user-attachments/assets/529c3ba5-af38-4058-a47f-b76c667dc428)
 
 
-Setup a new forest as "mydomain.com", select "next". Enter your chosen password and select "next". Continue to select "next" until you navigate to "prerequisites check", select "install". Following this step, DC-1 should automatically restart. Log back in to DC-1 VM.
+Setup a new forest as "mydomain.com", select "next". Enter your chosen password and select "next". Continue to select "next" until you navigate to "prerequisites check", select "install". Following this step, DC-1 should automatically restart. Log back in to DC-1 VM using "mydomain\"username" to login as a domain user instead of a local user. 
 
 
