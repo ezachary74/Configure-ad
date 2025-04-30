@@ -76,3 +76,18 @@ We now have to log into Client-1's virtual machine to perform a ping attempt on 
 
 Next, we must login to DC-1 and install Active Directory Domain Services to the VM. Go to the Windows icon and navigate to "server manager". Go to "server roles", select "next", and check the box showing "Active Directory Domain Services". Select "next" until you reach the confirmation section, and then select "Install".
 
+
+![image](https://github.com/user-attachments/assets/1e2ab022-4f68-486f-9058-dc4ee8b725bc)
+
+Then, navigate to server manager and click on the flag in the top right corner. Select "Promote this server to a domain controller", making DC-1 a controller. 
+
+![image](https://github.com/user-attachments/assets/4fc78aeb-af6e-4a61-988f-81fab5f99b06)
+
+![image](https://github.com/user-attachments/assets/d1ef5e37-817e-47b0-81c0-b269df4a758c)
+
+![image](https://github.com/user-attachments/assets/529c3ba5-af38-4058-a47f-b76c667dc428)
+
+
+Setup a new forest as "mydomain.com", select "next". Enter your chosen password and select "next". Continue to select "next" until you navigate to "prerequisites check", select "install". Following this step, DC-1 should automatically restart. Log back in to DC-1 VM.
+
+
