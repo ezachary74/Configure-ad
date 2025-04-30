@@ -91,3 +91,30 @@ Then, navigate to server manager and click on the flag in the top right corner. 
 Setup a new forest as "mydomain.com", select "next". Enter your chosen password and select "next". Continue to select "next" until you navigate to "prerequisites check", select "install". Following this step, DC-1 should automatically restart. Log back in to DC-1 VM using "mydomain(back slash)"username", to login as a domain user instead of a local user. 
 
 
+![image](https://github.com/user-attachments/assets/ea2cebd1-eb3c-4bee-b2b6-0593f053a9d2)
+
+
+Then we open Active Directory Users and Computers from the Windows icon. We then create two organizational units called "_EMPLOYEES" and "_ADMINS". We do this by right-clicking mydomain.com, selecting “New” and choosing “Organizational Unit”.
+
+
+![image](https://github.com/user-attachments/assets/eb46b61f-9d8f-4bc1-b64a-ee237b0b5ff3)
+
+
+Next, we right-click on "_Admins" and create a new user named Jane Doe, under the username jane_admin. We proceed by adding Jane Doe as a domain admin. Right-click the user, select Properties. Navigate to the “Members Of” tab and click “Add”. In the “Enter object names” field, we type “domain admins” and press "enter".
+
+
+![image](https://github.com/user-attachments/assets/424a5ead-72d8-47bd-a446-2e28174a1acf)
+
+
+Log out and close the connection to DC-1. Log back in as “mydomain.com\jane_admin”. This account will be used to log in to DC-1 from now on.
+
+
+![image](https://github.com/user-attachments/assets/ab90af60-3b86-40ac-a844-e20b0d1004a6)
+
+
+Then we join the domain from the Client-1 VM. Login in to Client-1 VM. Right-click the Windows logo, select “System”, then “Rename this PC (Advanced)”. Select “Change”, select “Domain”, and enter the domain name “mydomain.com”. To apply the changes, the VM will then restart.
+
+
+
+
+
