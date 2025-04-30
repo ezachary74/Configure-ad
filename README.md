@@ -115,6 +115,28 @@ Log out and close the connection to DC-1. Log back in as “mydomain.com\jane_ad
 Then we join the domain from the Client-1 VM. Login in to Client-1 VM. Right-click the Windows logo, select “System”, then “Rename this PC (Advanced)”. Select “Change”, select “Domain”, and enter the domain name “mydomain.com”. To apply the changes, the VM will then restart.
 
 
+![image](https://github.com/user-attachments/assets/74edcdb6-00d9-41e8-9afa-d3edcc74b6a0)
+
+
+Navigate back to DC-1 and open Active Directory Users and Computers through the Windows icon. Create another organizational unit named _CLIENTS under mydomain.com.
+
+
+![image](https://github.com/user-attachments/assets/db475c69-5b7b-4f19-b296-eaf10e7f6209)
+
+
+We then log into the Client-1 VM as jane_admin. Right-click the Windows logo, select “System”, then choose “Remote Desktop”. Click “Select users that can remotely access this PC” and add domain users.
+
+
+![image](https://github.com/user-attachments/assets/e72f26f7-ee3f-4a8b-bad8-9e0410bea812)
+
+
+The next step is to use the script found here: https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1. Log into DC-1 as jane_admin and open PowerShell ISE as an administrator. Create a new file, paste the script, and execute by clicking "run script". You should see that thousands of accounts are created.
+
+
+![image](https://github.com/user-attachments/assets/712c697c-d40d-4360-8f4b-80bf4d5839d8)
+
+
+After observing the users being created in PowerShell, open Active Directory Users and Computers to verify that the accounts have been created in the appropriate _EMPLOYEES organizational unit.
 
 
 
