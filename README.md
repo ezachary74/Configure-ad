@@ -68,5 +68,11 @@ We then have to set Client-1’s DNS settings to DC-1’s Private IP address. We
 ![image](https://github.com/user-attachments/assets/34313a25-c364-4cc5-a3fc-127683357d3a)
 
 
-We now have to log into Client-1's virtual machine to perform a ping attempt on DC-1's private IP address. We do this by utilizing Remote Desktop to log into Client-1 VM. We open Windows PowerShell and use the command "ping 10.0.0.4" to test the connection. 
+We now have to log into Client-1's virtual machine to perform a ping attempt on DC-1's private IP address. We do this by utilizing Remote Desktop to log into Client-1 VM. We open Windows PowerShell and use the command "ping 10.0.0.4" to test the connection. After ensuring a positive connection, perform the command "ipconfig /all". The output for the DNS settings should show DC-1’s private IP Address.
+
+
+![image](https://github.com/user-attachments/assets/93a47495-5a0b-48ae-ab54-05690edcd7fc)
+
+
+Next, we must login to DC-1 and install Active Directory Domain Services to the VM. Go to the Windows icon and navigate to "server manager". Go to "server roles", select "next", and check the box showing "Active Directory Domain Services". Select "next" until you reach the confirmation section, and then select "Install".
 
