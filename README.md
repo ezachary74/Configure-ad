@@ -62,5 +62,11 @@ Next, we sign into DC-1 Virtual machine and disable the "Windows Firewall". We p
 
 ![image](https://github.com/user-attachments/assets/d5a75918-f1e3-4edc-ae9a-0df78de50bc8)
 
-We then have to set Client-1’s DNS settings to DC-1’s Private IP address. We do this be selcting "Client-1" VM, "Settings", "DNS Servers", change to "Custom", and paste DC-1's private IP address. 
+We then have to set Client-1’s DNS settings to DC-1’s Private IP address. We do this be selecting "Client-1" VM, "Settings", "DNS Servers", change to "Custom", and paste DC-1's private IP address. 
+
+
+![image](https://github.com/user-attachments/assets/34313a25-c364-4cc5-a3fc-127683357d3a)
+
+
+We now have to log into Client-1's virtual machine to perform a ping attempt on DC-1's private IP address. We do this by utilizing Remote Desktop to log into Client-1 VM. We open Windows PowerShell and use the command "ping 10.0.0.4" to test the connection. 
 
