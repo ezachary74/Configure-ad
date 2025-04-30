@@ -23,7 +23,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Create a resource group in the Azure portal
 - Create a virtual network in the Azure portal
 - Create two virtual machines labeled as "Client-1" and "DC-1"
-- Step 4
+- Turn off Windows Firewall on DC-1
+- Join the Client-1 VM to the domain of the DC-1 VM
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -57,3 +58,9 @@ Just as we created the resource group and virtual network, create both virtual m
 
 
 Next, we sign into DC-1 Virtual machine and disable the "Windows Firewall". We perform this by right-clicking the Windows icon, selecting “run”, and typing wf.msc. In the Windows Defender Firewall window, we ensure the firewall is turned off for all profiles. Select "apply" and then select "OK".
+
+
+![image](https://github.com/user-attachments/assets/d5a75918-f1e3-4edc-ae9a-0df78de50bc8)
+
+We then have to set Client-1’s DNS settings to DC-1’s Private IP address. We do this be selcting "Client-1" VM, "Settings", "DNS Servers", change to "Custom", and paste DC-1's private IP address. 
+
